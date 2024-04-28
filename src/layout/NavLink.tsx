@@ -13,15 +13,13 @@ export default function NavLink({
   console.log(href);
   console.log(currentPath);
   return (
-    <li>
-      <Link
-        href={href}
-        className={clsx("hover:text-blue-600", {
-          underline: href === currentPath,
-        })}
-      >
-        {children}
-      </Link>
-    </li>
+    <Link
+      href={href}
+      className={clsx("hover:underline", {
+        "text-red-900 underline": href === currentPath,
+      })}
+    >
+      {children}
+    </Link>
   );
 }

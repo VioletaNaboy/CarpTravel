@@ -10,8 +10,6 @@ export default function NavLink({
   currentPath: string;
   children: React.ReactNode;
 }) {
-  console.log(href);
-  console.log(currentPath);
   return (
     <Link
       href={href}

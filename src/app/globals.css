@@ -45,6 +45,7 @@ button {
 
   .wrapper {
     width: 100%;
+    min-width: 320px;
     padding: 56px 20px;
   }
 

@@ -2,9 +2,9 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-hero bg-cover bg-center h-lvh w-full container"
+      className="bg-about bg-cover bg-center bg-no-repeat h-lvh w-full wrapper"
     >
-      About
+      <div className="container"></div>
     </section>
   );
 }

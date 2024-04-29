@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,7 +13,13 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero' : "linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url('/img/backgrounds/hero-background.jpg')"
+        'hero': "url('/img/backgrounds/hero-background.png')",
+        'about': "url('/img/backgrounds/about-background.png')",
+        'services': "url('/img/backgrounds/services-background.png')",
+        'career': "url('/img/backgrounds/career-background.png')",
+        'gallery': "url('/img/backgrounds/gallery-background.png')",
+        'contacts': "url('/img/backgrounds/contacts-background.png')",
+        
       },
       screens: {
         'sm': '768px', 
@@ -19,14 +27,16 @@ const config: Config = {
       },
       container: {
       padding: {
-        sm: '20px',
-        md: '32px',
-        lg: '80px',
+        sm: '0px',
+        md: '0px',
+        lg: '24px',
         }
     },
 
     },
   },
-  plugins: [],
+  plugins: [
+          
+  ],
 };
 export default config;

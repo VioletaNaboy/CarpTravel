@@ -2,9 +2,9 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-hero bg-cover bg-center h-lvh w-full container"
+      className="bg-services bg-cover bg-center bg-no-repeat h-lvh w-full wrapper"
     >
-      Services
+      <div className="container"></div>
     </section>
   );
 }

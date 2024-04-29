@@ -2,9 +2,9 @@ export default function Contacts() {
   return (
     <section
       id="contacts"
-      className="bg-hero bg-cover bg-center h-lvh w-full container"
+      className="bg-contacts bg-cover bg-center bg-no-repeat h-lvh w-full wrapper"
     >
-      Contacts
+      <div className="container"></div>
     </section>
   );
 }

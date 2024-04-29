@@ -22,8 +22,9 @@ const config: Config = {
         
       },
       screens: {
-        'sm': '768px', 
-        'md': '1280px',
+        'sm': '420px',
+        'md': '768px', 
+        'lg': '1280px',
       },
       container: {
       padding: {
@@ -31,7 +32,24 @@ const config: Config = {
         md: '0px',
         lg: '24px',
         }
-    },
+      },
+      fontSize: {
+        'xs-mob': ['12px', '20px'],
+        'xs-tab': ['12px', '20px'],
+        'xs-des': ['12px', '24px'],
+        's-mob': ['14px', '20px'],
+        's-tab': ['16px', '20px'],
+        's-des': ['18px', '24px'],
+        'm-mob': ['20px', '17px'],
+        'm-tab': ['22px', '18px'],
+        'm-des': ['28px', '24px'],
+        'btn-mob': ['30px', 'normal'],
+        'btn-tab': ['30px', 'normal'],
+        'btn-des': ['32px', 'normal'],
+        'l-mob': ['40px', '56px'],
+        'l-tab': ['67px', 'normal'],
+        'l-des': ['98px', 'normal'],
+    }
 
     },
   },

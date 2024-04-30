@@ -42,8 +42,9 @@ export default function Gallery() {
         </div>
         <div className="hidden md:block">
           <Swiper
-            slidesPerView={1}
-            spaceBetween={3}
+            slidesPerView={2}
+            spaceBetween={10}
+            freeMode={true}
             loop={true}
             navigation={{
               nextEl: ".custom-next",

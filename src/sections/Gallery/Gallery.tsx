@@ -42,8 +42,8 @@ export default function Gallery() {
         </div>
         <div className="hidden md:block mx-[auto]">
           <Swiper
-            slidesPerView={2}
-            spaceBetween={10}
+            slidesPerView={3}
+            spaceBetween={-10}
             freeMode={true}
             loop={true}
             navigation={{
@@ -53,6 +53,30 @@ export default function Gallery() {
             modules={[Navigation]}
             className="mySwiper"
           >
+            <SwiperSlide className="w-[454px]">
+              <Image
+                src="/img/services/slide-1.jpg"
+                width={458}
+                height={306}
+                alt="Slide"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="w-[454px]">
+              <Image
+                src="/img/services/slide-2.jpg"
+                width={458}
+                height={306}
+                alt="Slide"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="w-[454px]">
+              <Image
+                src="/img/services/slide-3.jpg"
+                width={458}
+                height={306}
+                alt="Slide"
+              />
+            </SwiperSlide>
             <SwiperSlide className="w-[454px]">
               <Image
                 src="/img/services/slide-1.jpg"

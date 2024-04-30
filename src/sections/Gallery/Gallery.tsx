@@ -40,7 +40,7 @@ export default function Gallery() {
             alt="Slide"
           />
         </div>
-        <div className="hidden md:block">
+        <div className="hidden md:block mx-[auto]">
           <Swiper
             slidesPerView={2}
             spaceBetween={10}

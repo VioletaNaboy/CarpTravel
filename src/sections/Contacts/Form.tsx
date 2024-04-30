@@ -36,6 +36,7 @@ export default function Form() {
             name="name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            required
           />
         </label>
         <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc lg:w-[293px]">
@@ -47,6 +48,7 @@ export default function Form() {
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
             }
+            required
           />
         </label>
       </div>
@@ -60,6 +62,7 @@ export default function Form() {
               setFormData({ ...formData, message: e.target.value })
             }
             className="md:w-100%"
+            required
           ></textarea>
         </label>
         <button

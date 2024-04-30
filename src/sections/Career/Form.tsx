@@ -42,6 +42,7 @@ export default function Form() {
             name="name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            required
           />
         </label>
         <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc">
@@ -53,6 +54,7 @@ export default function Form() {
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
             }
+            required
           />
         </label>
         <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc">
@@ -64,6 +66,7 @@ export default function Form() {
             onChange={(e) =>
               setFormData({ ...formData, position: e.target.value })
             }
+            required
           />
         </label>
         <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc">
@@ -75,6 +78,7 @@ export default function Form() {
             onChange={(e) =>
               setFormData({ ...formData, phone: e.target.value })
             }
+            required
           />
         </label>
         <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc md:hidden">
@@ -85,6 +89,7 @@ export default function Form() {
             onChange={(e) =>
               setFormData({ ...formData, message: e.target.value })
             }
+            required
           ></textarea>
         </label>
         <div>
@@ -97,6 +102,7 @@ export default function Form() {
               onChange={(e) =>
                 setFormData({ ...formData, confirmation: e.target.checked })
               }
+              required
             />{" "}
             I confirm my consent to the processing of personal data.
           </label>
@@ -118,6 +124,7 @@ export default function Form() {
               setFormData({ ...formData, message: e.target.value })
             }
             className="md:w-[221px] lg:w-[292px]"
+            required
           ></textarea>
         </label>
         <button

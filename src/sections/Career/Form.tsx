@@ -117,6 +117,7 @@ export default function Form() {
             onChange={(e) =>
               setFormData({ ...formData, message: e.target.value })
             }
+            className="md:w-[221px] lg:w-[292px]"
           ></textarea>
         </label>
         <button

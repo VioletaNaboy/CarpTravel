@@ -103,7 +103,6 @@ button {
     }
 
     textarea {
-      width: 221px;
       height: 228px;
       resize: none;
     }
@@ -130,7 +129,6 @@ button {
     }
 
     textarea {
-      width: 292px;
       height: 266px;
     }
   }

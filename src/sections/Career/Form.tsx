@@ -30,8 +30,11 @@ export default function Form() {
   }
 
   return (
-    <form onSubmit={onSubmit} className=" md:flex justify-between gap-[20px]">
-      <div className="flex flex-col gap-[16px] lg:gap-[24px] md:w-[222px]">
+    <form
+      onSubmit={onSubmit}
+      className=" md:flex justify-between gap-[20px] lg:min-w-[620px]"
+    >
+      <div className="flex flex-col gap-[16px] lg:gap-[24px] md:w-[222px] lg:w-[290px]">
         <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc">
           Full name
           <input
@@ -105,7 +108,7 @@ export default function Form() {
           Send
         </button>
       </div>
-      <div className="sm:hidden md:flex flex-col gap-[16px] lg:gap-[24px] md:w-[222px] items-end">
+      <div className="sm:hidden md:flex flex-col gap-[16px] lg:gap-[24px] md:w-[222px] items-end lg:w-[290px]">
         <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc">
           Message
           <textarea

@@ -4,13 +4,13 @@ export default function Contacts() {
   return (
     <section
       id="contacts"
-      className="bg-contacts bg-cover bg-center bg-no-repeat md:h-lvh w-full wrapper"
+      className="bg-contacts bg-cover bg-center bg-no-repeat lg:h-lvh w-full wrapper"
     >
       <div className="container">
         <h2 className="text-l-mob md:text-l-tab lg:text-l-des font-thin mb-[24px]">
           Contact <span className="font-medium">Us</span>
         </h2>
-        <div className="md:flex gap-[281px] ">
+        <div className="md:flex flex-col justify-between lg:flex-row lg:gap-[281px]  ">
           <div className="flex flex-col gap-[26px] md:w-[525px] md:flex-row justify-between md:mb-[64px] lg:flex-col lg:items-end">
             {" "}
             <div className="flex flex-col gap-[26px] lg:gap-[64px] lg:items-end">

@@ -15,11 +15,14 @@ const config: Config = {
       backgroundImage: {
         'hero': "url('/img/backgrounds/hero-background.png')",
         'about': "url('/img/backgrounds/about-background.png')",
-        'services': "url('/img/backgrounds/services-background.png')",
+        'atvs-desc': "url('/img/backgrounds/atvs-traveling.png')",
+        'rafting-desc': "url('/img/backgrounds/rafting.png')",
+        'airBall-desc': "url('/img/backgrounds/hot-air-ballooning.png')",
+        'skyding-desc': "url('/img/backgrounds/skydiving.png')",
+        'rockClimb-desc': "url('/img/backgrounds/rock-climbing.png')",
         'career': "url('/img/backgrounds/career-background.png')",
         'gallery': "url('/img/backgrounds/gallery-background.png')",
-        'contacts': "url('/img/backgrounds/contacts-background.png')",
-        
+        'contacts': "url('/img/backgrounds/contacts-background.png')"       
       },
       screens: {
         'sm': '420px',

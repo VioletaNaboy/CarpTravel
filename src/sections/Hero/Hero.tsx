@@ -8,7 +8,7 @@ export default function Hero() {
       id="hero"
       className="bg-hero bg-cover bg-center bg-no-repeat h-lvh w-full wrapper"
     >
-      <div className="container flex flex-col  md:flex-row sm:h-[416px] md:h-[345px] lg:h-[577px] justify-between ">
+      <div className="container flex flex-col  md:flex-row  justify-between ">
         <div className="flex flex-col sm:gap-[24px] justify-between">
           <h2 className="text-l-mob md:text-l-tab lg:text-l-des font-thin">
             <span className="font-medium">Uncover</span> Carpathian’s Secrets

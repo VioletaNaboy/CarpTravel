@@ -30,70 +30,99 @@ export default function Form() {
   }
 
   return (
-    <form onSubmit={onSubmit}>
-      <label>
-        Full name
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-        />
-      </label>
-      <label>
-        E-mail
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-        />
-      </label>
-      <label>
-        Position
-        <input
-          type="text"
-          name="position"
-          value={formData.position}
-          onChange={(e) =>
-            setFormData({ ...formData, position: e.target.value })
-          }
-        />
-      </label>
-      <label>
-        Phone
-        <input
-          type="tel"
-          name="phone"
-          value={formData.phone}
-          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-        />
-      </label>
-      <label>
-        Message
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={(e) =>
-            setFormData({ ...formData, message: e.target.value })
-          }
-        ></textarea>
-      </label>
-      <div>
-        <label htmlFor="confirmation">
+    <form onSubmit={onSubmit} className=" md:flex justify-between gap-[20px]">
+      <div className="flex flex-col gap-[16px] lg:gap-[24px] md:w-[222px]">
+        <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc">
+          Full name
           <input
-            type="checkbox"
-            name="confirmation"
-            id="confirmation"
-            checked={formData.confirmation}
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          />
+        </label>
+        <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc">
+          E-mail
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
             onChange={(e) =>
-              setFormData({ ...formData, confirmation: e.target.checked })
+              setFormData({ ...formData, email: e.target.value })
             }
           />
-          Confirmation
         </label>
+        <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc">
+          Position
+          <input
+            type="text"
+            name="position"
+            value={formData.position}
+            onChange={(e) =>
+              setFormData({ ...formData, position: e.target.value })
+            }
+          />
+        </label>
+        <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc">
+          Phone
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={(e) =>
+              setFormData({ ...formData, phone: e.target.value })
+            }
+          />
+        </label>
+        <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc md:hidden">
+          Message
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={(e) =>
+              setFormData({ ...formData, message: e.target.value })
+            }
+          ></textarea>
+        </label>
+        <div>
+          <label htmlFor="confirmation">
+            <input
+              type="checkbox"
+              name="confirmation"
+              id="confirmation"
+              checked={formData.confirmation}
+              onChange={(e) =>
+                setFormData({ ...formData, confirmation: e.target.checked })
+              }
+            />{" "}
+            I confirm my consent to the processing of personal data.
+          </label>
+        </div>
+        <button
+          type="submit"
+          className="text-btn-mob md:text-btn-tab lg:text-btn-desc ml-[auto] md:hidden"
+        >
+          Send
+        </button>
       </div>
-      <button type="submit">Send</button>
+      <div className="sm:hidden md:flex flex-col gap-[16px] lg:gap-[24px] md:w-[222px] items-end">
+        <label className="flex flex-col text-xs-mob md:text-xs-tab lg:text-xs-desc">
+          Message
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={(e) =>
+              setFormData({ ...formData, message: e.target.value })
+            }
+          ></textarea>
+        </label>
+        <button
+          type="submit"
+          className="text-btn-mob md:text-btn-tab lg:text-btn-desc"
+        >
+          Send
+        </button>
+      </div>
     </form>
   );
 }

@@ -55,7 +55,7 @@ export default function Services() {
       id="services"
       className={clsx(
         `bg-${selectedService.img}`,
-        "bg-cover bg-center bg-no-repeat md:h-lvh w-full wrapper"
+        "bg-atvs-desc bg-cover bg-center bg-no-repeat md:h-lvh w-full wrapper"
       )}
     >
       <div className="container relative">
@@ -74,7 +74,7 @@ export default function Services() {
             alt="Picture of the service"
             className="my-[12px]"
           />
-          <div className="flex flex-col gap-[34px] md:min-w-[224px] md:w-[224px] md:min-w-[420px] justify-between">
+          <div className="flex flex-col gap-[34px] md:min-w-[224px] md:w-[224px] md:min-w-[420px] lg:min-width-[560] lg:gap-[72px]">
             <div className="flex flex-col md:flex-col-reverse gap-[24px] lg:flex-row-reverse items-center ">
               <p className="text-xs-mob md:text-xs-tab lg:text-xs-desc ml-[auto] md:ml-0 ">
                 {selectedService.info}

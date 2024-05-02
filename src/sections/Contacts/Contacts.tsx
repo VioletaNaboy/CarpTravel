@@ -16,8 +16,20 @@ export default function Contacts() {
             <div className="flex flex-col gap-[26px] lg:gap-[64px] lg:items-end">
               <div className="flex w-[238px] justify-between items-start ml-[auto]">
                 <div className="text-s-mob md:text-s-tab lg:text-s-desc flex flex-col font-normal">
-                  <a href="tel:+380981234567">+38 (098) 12 34 567</a>
-                  <a href="tel:+380731234567">+38 (073) 12 34 567</a>
+                  <a
+                    href="tel:+380981234567"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    +38 (098) 12 34 567
+                  </a>
+                  <a
+                    href="tel:+380731234567"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    +38 (073) 12 34 567
+                  </a>
                 </div>
                 <span className="text-xs-mob lg:text-xs-desc">
                   Phone number
@@ -26,6 +38,8 @@ export default function Contacts() {
               <div className="flex gap-[20px] justify-center">
                 <a
                   href="mail:support@carptravel.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
                   className="text-s-mob md:text-s-tab lg:text-s-desc font-normal"
                 >
                   support@carptravel.com
@@ -37,16 +51,40 @@ export default function Contacts() {
               <span className="text-xs-mob lg:text-xs-desc">Follow us</span>
               <ul className="text-s-mob md:text-s-tab lg:text-s-desc flex flex-col font-normal">
                 <li>
-                  <a href="#">facebook</a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    facebook
+                  </a>
                 </li>
                 <li>
-                  <a href="#">instagram</a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    instagram
+                  </a>
                 </li>
                 <li>
-                  <a href="#">youtube</a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    youtube
+                  </a>
                 </li>
                 <li>
-                  <a href="#">tiktok</a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    tiktok
+                  </a>
                 </li>
               </ul>
             </div>

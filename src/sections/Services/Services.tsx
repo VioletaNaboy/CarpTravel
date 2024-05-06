@@ -74,25 +74,33 @@ export default function Services() {
             alt="Picture of the service"
             className="my-[12px]"
           />
-          <div className="flex flex-col gap-[34px] md:min-w-[224px] md:w-[224px] md:min-w-[420px] lg:min-width-[560] lg:gap-[72px]">
-            <div className="flex flex-col md:flex-col-reverse gap-[24px] lg:flex-row-reverse items-center ">
-              <p className="text-xs-mob md:text-xs-tab lg:text-xs-desc ml-[auto] md:ml-0 ">
+          <div className="flex flex-col gap-[34px] md:min-w-[224px] md:w-[224px] md:min-w-[420px] lg:min-width-[500px] lg:w-[500px] lg:gap-[72px] lg:items-start relative">
+            <div className="flex flex-col md:flex-col-reverse gap-[24px] lg:flex-row-reverse items-center">
+              <p className="text-xs-mob md:text-xs-tab ml-[auto] md:ml-0 lg:hidden">
                 {selectedService.info}
               </p>
-              <ul className="flex flex-col gap-[16px] lg:gap-[24px] lg:w-[220px]">
+              <ul className="flex flex-col gap-[16px] lg:gap-[24px]  lg:ml-[36px]">
                 {Object.entries(services).map(([serviceName, service]) => (
-                  <li key={serviceName}>
+                  <li
+                    key={serviceName}
+                    className="lg:flex lg:w-[486px] justify-between items-center"
+                  >
                     <h3
                       className={clsx(
                         "text-m-mob md:text-m-tab lg:text-m-desc cursor-pointer",
                         {
-                          "font-medium": service === selectedService,
+                          "font-medium active": service === selectedService,
                         }
                       )}
                       onClick={() => handleServiceClick(serviceName)}
                     >
                       {serviceName}
                     </h3>
+                    {service === selectedService && (
+                      <p className=":text-xs-desc hidden lg:flex">
+                        {selectedService.info}
+                      </p>
+                    )}
                   </li>
                 ))}
               </ul>

@@ -39,7 +39,7 @@ export default function Header() {
   return (
     <header className="flex justify-center fixed w-full py-[35px] px-[101px] text-sm text-white max-w-[100vw]">
       <div className="container flex justify-between items-center">
-        <Link href="#hero">
+        <Link href="/">
           <Image src={logo} alt="Logo" width={61} height={34} priority />
         </Link>
         <nav className="hidden md:block">

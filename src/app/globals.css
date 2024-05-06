@@ -101,6 +101,21 @@ button {
     z-index: 1000;
   }
 
+  .active {
+    position: relative;
+  }
+
+  .active::before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+  }
+
   @media screen and (min-width: 768px) {
     .wrapper {
       padding: 74px 32px 64px
